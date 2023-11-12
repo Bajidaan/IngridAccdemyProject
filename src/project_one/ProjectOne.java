@@ -80,7 +80,7 @@ public class ProjectOne {
     }
 
     // Close connection
-    private void closeConnection() {
+    public void closeConnection() {
         try {
             connection.close();
         } catch (Exception e) {
@@ -94,6 +94,7 @@ public class ProjectOne {
 
         projectOne.createTable();
         projectOne.populateTable();
+        projectOne.closeConnection();
     }
 }
 
